@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Finance Control </title>
+    <meta charset = "utf-8" />
+    <style type = "text/css">
+        	  
+    body
+	{
+		background-color: snow;
+		text-align: center;
+		font-family: arial;
+	}
+	
+	nav
+	{
+		background-color: #f2f2f2;
+		padding: 12px;
+	}
+	
+	a
+	{
+		background-color: #A9A9A9;
+		color: white;
+		padding: 6px 8px;
+		text-decoration: none;
+		border-radius: 30px;
+	}
+	
+	a:hover
+	{
+		background-color: green;
+		color: white;
+	}
+	
+	a.curr
+	{
+		background-color: green;
+		color: white;
+	}
+	
+	p
+	{
+		display: inline-block;
+		text-align: left;
+	}
+
+	table
+	{
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	th, td
+	{
+		text-align: center;
+		padding: 8px;
+	}
+
+	tr:nth-child(even)
+	{
+		background-color: #f2f2f2;
+	}
+
+	.button
+	{
+    	background-color: #A9A9A9;
+    	border: solid;
+		color: white;
+    	padding: 5px 10px;
+    	border-radius: 20px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 12px;
+	}
+	
+	.button:hover
+	{
+		background-color: green;
+		color: white;
+	}
+	
+    </style>
+</head>
+<body>
+    <form action = "Salaries.php" method = "post">
+      <h2> Finance Control </h2>
+      	<nav>
+      		<a href = "homepage.html">Home</a>
+			<a href = "Employees.html">Employee Administration</a>
+			<a href = "Salaries.html" class = "curr">Finance Control</a>
+			<a href = "Projects.html">Manage a Project</a>
+  		</nav>
+  		<br />
+      	<table>
+          	<tr>
+            	<th> Employee ID </th>
+            	<th> Salary ($) </th>
+          	</tr>
+          	<tr>
+            	<td><input type = "text"  name = "eID" size = "6" value = "" /></td>
+           	 <td><input type = "text"  name = "Salary" size = "14" value = "" /></td>
+          	</tr>
+      	</table>
+		<h3> Select an action: </h3>
+      	<p>
+        	<input type = "radio"  name = "action"  value = "display" checked = "checked" /> Display all employee's salaries 
+        	<br />
+			<input type = "radio"  name = "action"  value = "search" /> Search by  Employee ID
+			<br />
+        	<input type = "radio"  name = "action"  value = "insert" /> Add an employee's salary record
+			<br />
+        	<input type = "radio"  name = "action"  value = "update" /> Update an employee's salary record
+			<br />
+        	<input type = "radio"  name = "action"  value = "delete" /> Remove an employee's salary record 
+			<br /> <br />
+        </p>
+        <br />
+        <input  class = "button" type = "reset"  value = "Reset" />
+        <input class = "button" type = "submit"  value = "Submit" />
+        <br /> <br />
+        <input class = "button" type = "submit"  value = "Display Budget Graphic" />
+    </form>
+  </body>
+</html>
