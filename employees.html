@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Employee Management </title>
+    <meta charset = "utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
+    <link type = "text/css" rel = "stylesheet" href = "style.css"/>
+</head>
+<body>
+	<form action = "employees.php" method = "post">
+    	<h2> Employee Administration </h2>
+      	<nav>
+      		<a href = "homepage.html" class = "reg">Home</a>
+			<a href = "employees.html" class = "curr">Employee</a>
+			<a href = "salaries.html" class = "reg">Salary</a>
+			<a href = "calendar.php" class = "reg">Project</a>
+			<a href = "piechart.php" class = "reg">Finance</a>
+  		</nav>
+  		<br />    	
+      	<table>
+          	<tr>
+            	<th> Employee ID </th>
+            	<th> First Name </th>
+            	<th> Last Name </th>
+            	<th> Department </th>
+            	<th> Date Of Birth </th>
+				<th> Join Date </th>
+          	</tr>
+          	<tr>
+            	<td><input type = "text"  name = "eID" size = "6" value = "" /></td>
+            	<td><input type = "text"  name = "FirstName" size = "14" value = "" /></td>
+				<td><input type = "text"  name = "LastName" size = "14" value = "" /></td>
+				<td><input type = "text"  name = "Department" size = "14" value = "" /></td>
+            	<td><input type = "text"  name = "DateOfBirth" size = "14" value = "" /></td>
+            	<td><input type = "text"  name = "JoinDate" size = "14" value = "" /></td>
+          	</tr>
+      	</table>
+		<h3> Select an action: </h3>
+      	<p>
+        	<input type = "radio"  name = "action"  value = "display" checked = "checked" /> Display all employees
+        	<br />
+			<input type = "radio"  name = "action"  value = "search" /> Search by employee ID
+			<br />
+			<input type = "radio"  name = "action"  value = "searchDep" /> Search by department
+			<br />
+        	<input type = "radio"  name = "action"  value = "insert" /> Add a new employee
+        	<br />
+        	<input type = "radio"  name = "action"  value = "update" /> Update an employee's record
+        	<br />
+        	<input type = "radio"  name = "action"  value = "delete" /> Remove an employee
+        	<br /><br />
+        </p>
+        <br />
+        <input  class = "button" type = "reset"  value = "Reset" />
+        <input  class = "button" type = "submit"  value = "Submit" />
+    </form>
+</body>
+</html>

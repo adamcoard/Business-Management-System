@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Salary Management </title>
+    <meta charset = "utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
+   	<link type = "text/css" rel = "stylesheet" href = "style.css"/>
+</head>
+<body>
+    <form action = "salaries.php" method = "post">
+      <h2> Salary Management </h2>
+      	<nav>
+      		<a href = "homepage.html" class = "reg">Home</a>
+			<a href = "employees.html" class = "reg">Employee</a>
+			<a href = "salaries.html" class = "curr">Salary</a>
+			<a href = "calendar.php" class = "reg">Project</a>
+			<a href = "piechart.php" class = "reg">Finance</a>
+  		</nav>
+  		<br />
+      	<table>
+          	<tr>
+            	<th> Employee ID </th>
+            	<th> Salary ($) </th>
+          	</tr>
+          	<tr>
+            	<td><input type = "text"  name = "eID" size = "6" value = "" /></td>
+           	 <td><input type = "text"  name = "Salary" size = "14" value = "" /></td>
+          	</tr>
+      	</table>
+      	<br/><br/>
+		<h3> Select an action: </h3>
+      	<p>
+        	<input type = "radio"  name = "action"  value = "display" checked = "checked" /> Display all employee's salaries 
+        	<br />
+			<input type = "radio"  name = "action"  value = "search" /> Search by  Employee ID
+			<br />
+        	<input type = "radio"  name = "action"  value = "insert" /> Add an employee's salary record
+			<br />
+        	<input type = "radio"  name = "action"  value = "update" /> Update an employee's salary record
+			<br />
+        	<input type = "radio"  name = "action"  value = "delete" /> Remove an employee's salary record 
+			<br /> <br />
+        </p>
+        <br />
+        <input  class = "button" type = "reset"  value = "Reset" />
+        <input class = "button" type = "submit"  value = "Submit" />
+    </form>
+  </body>
+</html>

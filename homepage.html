@@ -2,13 +2,18 @@
 <html>
 <head>
 	<title> Home </title>
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
  	<style type = "text/css">
     
     body
 	{
-		font-family: arial;
-		background-color: snow;
+		font-family: 'ABeeZee', sans-serif;
 		text-align: center;
+	}
+	
+	p
+	{
+		font-size: 18px;
 	}
 	
 	.zone
@@ -40,8 +45,8 @@
 
 	.grid li
 	{
-		width: 300px;
-		height: 350px;
+		width: 200px;
+		height: 250px;
 		display: inline-block;
 		margin: 20px;
 	}
@@ -62,13 +67,13 @@
 
 	.box:hover
 	{
-		transform: scale(1.05);
+		transform: scale(1.2);
 		background-color: green;
 	}
 
 	.img
 	{
-		background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10));
+		background-color: green;
 	}
 
 	.info
@@ -76,14 +81,14 @@
 		position: absolute;
 		width: inherit;
 		height: inherit;
-		top: 18%;
+		top: 17%;
 	}
 
 	.info h3
 	{
-		font-weight: 400;
-		color: #fff;
-		font-size: 30px;
+		font-weight: 500;
+		color: white;
+		font-size: 26px;
 		margin: 0;
 		padding: 10px;
 		line-height: 1.5;
@@ -91,47 +96,57 @@
 
 	.info p
 	{
-		color: #fff;
+		color: white;
 		padding: 4px 5px;
 		margin: 0 30px;
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 2;
 	}
     </style>
 </head>
 <body>
 	<br />
-	<h1> Business Management System</h1>
+	<h1> Welcome to the Business Management System</h1>
 	<br />
-	<p>Please select an option below:</p>
+	<p> Please select an option to manage below: </p>
 	<div class = "zone">
 		<ul class = "grid">
 			<li>
-				<a href = "Employees.html">
+				<a href = "employees.html">
 					<div class = "box img">
 						<div class = "info">
-							<h3> Employee Administration </h3>
+							<h3> Employee </h3>
 							<p>  Add, update, and search employee information </p>
 						</div>
 					</div>
 				</a>
 			</li>
 			<li>
-				<a href = "Salaries.html">
+				<a href = "salaries.html">
 					<div class = "box img">
 						<div class = "info">
-							<h3> Finance Control </h3>
-							<p> Manage employee salaries and manage the company's budget </p>
+							<h3> Salary </h3>
+							<p> Add, update, and search employee salaries </p>
 						</div>
 					</div>
 				</a>
 			</li>
 			<li>
-				<a href = "Projects.html">
+				<a href = "calendar.php">
 					<div class = "box img">
 						<div class = "info">
-							<h3> Manage a Project </h3>
-							<p> Assign, update, and search projects </p>
+							<h3> Project </h3>
+							<p> Assign projects in a calendar view </p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href = "piechart.php">
+					<div class = "box img">
+						<div class = "info">
+							<h3> Finance </h3>
+							<p> Manage the business' budget in a graph view </p>
 						</div>
 					</div>
 				</a>
